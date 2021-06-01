@@ -1,0 +1,15 @@
+Problema da distância de edição entre duas string, tendo como possível 3 operações, a troca de carateres, a eliminação de carateres e a adição de carateres. 
+
+Tendo duas strings iniciais queremos encontrar o caminho mais curto para igualizar a string 1 a string 2 ou vice versa, a distância será a mesma.
+
+Se compararmos carater a carater nunca iremos ver as opções onde será mais benéfico eliminar um carater ou adicionar um carater.
+Se duas strings têm uma diferença de tamannho N a sua distância será no mínimo N.
+Teremos que ver sempre a opção mais benéfica.
+
+O algoritmo original segue uma disposição do tipo: lev (i,j) = max(i,j)       if min(i,j)=0
+                                                               min = lev(i-1,j) + 1
+                                                                     lev(i,j-1) +  1
+                                                                     lev(i-1,j-1) + 1
+Isto levará a um algoritmo de complexidade quadrática. Haverá maneira mais "rápida" de fazer? Segundo pesquisa não há, portanto será mais proveitoso para a resolução deste problema assumirmos que esta é a nossa melhor opção.
+
+

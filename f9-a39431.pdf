@@ -1,0 +1,14 @@
+type color = White | Black (* W : White , B : Black *)
+
+type image = Leaf of color (* leaf of one color *)
+| Node of image * image * image * image (* node with four
+children *)
+
+let node = function
+| White, White, White, White -> White
+| Black, Black, Black, Black -> Black
+| q1,q2,q3,q4 -> Node (q1,q2,q3,q4)
+
+let tuple = 
+  let (x,y) = Scanf.scanf "%d %d\n" in
+  (x,y)

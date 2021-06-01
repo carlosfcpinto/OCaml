@@ -1,0 +1,6 @@
+{
+    "powermode.enableShake": false,
+    "powermode.presets": "exploding-rift",
+    "powermode.backgroundMode": "image",
+    "terminal.integrated.env.osx": "/bin/zsh"
+}
